@@ -3,17 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2048 Game Hub — Play & Master 2048</title>
-  <meta name="description" content="Play 2048 online and learn how to master the game with our complete strategy guides, tips, and tier lists.">
+  <title>Game Hub — Play & Master Your Favorite Games</title>
+  <meta name="description" content="Play 2048, Snake, and Tetris online. Learn how to master them with our strategy guides.">
+  
+  <!-- Link to our new CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>2048 Game Hub</h1>
-  <p>Your complete resource for playing and mastering 2048.</p>
 
-  <!-- This is the GameZipper embed -->
-  <iframe src="https://gamezipper.com/2048/" width="100%" height="600" frameborder="0" allowfullscreen loading="lazy"></iframe>
-  <iframe src="https://gamezipper.com/snake/?utm_source=embed" width="800" height="600" style="border:none;max-width:100%" allowfullscreen allow="autoplay; fullscreen; gamepad"></iframe>
-  <iframe src="https://gamezipper.com/tetris/?utm_source=embed" width="800" height="600" style="border:none;max-width:100%" allowfullscreen allow="autoplay; fullscreen; gamepad"></iframe>
+  <header>
+    <h1>My Game Hub</h1>
+    <p class="subtitle">Play instantly. Master the strategy.</p>
+  </header>
+
+  <main>
+    <!-- GAME 1: 2048 -->
+    <div class="game-container">
+      <h2>🎮 2048</h2>
+      <!-- Notice the /games/ in the URL -->
+      <iframe src="https://gamezipper.com/games/2048/" loading="lazy" title="Play 2048"></iframe>
+      <br>
+      <a href="/strategy.html" class="btn">Read the 2048 Strategy Guide →</a>
+    </div>
+
+    <!-- GAME 2: SNAKE -->
+    <div class="game-container">
+      <h2>🐍 Snake</h2>
+      <iframe src="https://gamezipper.com/games/snake/" loading="lazy" title="Play Snake"></iframe>
+    </div>
+
+    <!-- GAME 3: TETRIS -->
+    <div class="game-container">
+      <h2>🧱 Tetris</h2>
+      <iframe src="https://gamezipper.com/games/tetris/" loading="lazy" title="Play Tetris"></iframe>
+    </div>
+  </main>
 
 </body>
 </html>
