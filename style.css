@@ -50,13 +50,22 @@ p.subtitle {
 }
 
 /* Responsive Iframes */
+/* Responsive Iframes - Full Width */
 iframe {
   width: 100%;
-  aspect-ratio: 4 / 3; /* Keeps the game from stretching weirdly */
+  height: 600px; /* Gives the game a good, tall play area */
+  max-width: 100%;
   border: none;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   background-color: #000;
+}
+
+/* Adjust height for mobile screens so the game fits vertically */
+@media (max-width: 768px) {
+  iframe {
+    height: 500px; /* Slightly shorter on mobile */
+  }
 }
 
 /* Call to Action Button */
